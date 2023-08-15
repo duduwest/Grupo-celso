@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    display: flex;
+
+    height: 90px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+    justify-content: center;
+}
+.navbar{
+    width: 95%;
+    display: flex;
+    height: 100%;
+
+}
+.esquerda{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.esquerda .logo img{
+    width: 40px;
+    cursor: pointer;
+
+}
+.logo{
+    margin-left: 20px;
+}
+.esquerda .textos{
+    height: 25px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    align-items: center;
+}
+.esquerda .textos a{
+    color: rgb(24, 11, 4);
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.textos a:hover{
+    letter-spacing: 4px;
+    text-decoration: underline;
+    color: rgb(10, 134, 66);
+    transition: all 0.3s;
+}
+.direita{
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.direita .textos{
+    height: 45px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.buttonenter{
+    display: flex;
+    height: 30px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid rgb(24, 11, 4);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.buttonenter:hover{
+    border: 1px solid #0f4111;
+    color: #0f4111;
+    height: 29px;
+    width: 75px;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 1px 1px #adacac;
+}
+
+.buttonenter span{
+    font-weight: 600;
+}
+.buttonparticipe{
+        display: flex;
+        height: 30px;
+        width: 140px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: 1px solid rgb(24, 11, 4);
+        cursor: pointer;
+        transition: all 0.3s;
+}
+.buttonparticipe:hover{
+    border: 1px solid #0f4111;
+    color: #0f4111;
+    height: 29px;
+    width: 135px;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 1px 1px #adacac;
+}
+
+.buttonparticipe span{
+    font-weight: 600;
+}
+

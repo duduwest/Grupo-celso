@@ -1,74 +1,125 @@
-body {
-    font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;800&display=swap');
+*{
+    padding: 0;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+nav{
+    display: flex;
+
+    height: 90px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 10%), 0 2px 2px rgb(0 0 0 / 6%), 0 0 2px rgb(0 0 0 / 7%);
+    justify-content: center;
 }
 
-form {
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-p {
-    margin-bottom: 20px;
-}
-
-input[type="text"],
-select,
-textarea {
+  
+.navbar {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    display: flex;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    background-color: #fff;
+    
 }
 
-input[type="radio"],
-input[type="checkbox"] {
-    margin-top: 10px;
-}
 
-select {
-    height: 34px;
+.esquerda{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
 }
-
-textarea {
-    resize: vertical;
-    height: 120px;
-}
-
-input[type="submit"],
-input[type="reset"] {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
+.esquerda .logo img{
+    width: 40px;
     cursor: pointer;
+
+}
+.logo{
+    margin-left: 20px;
+}
+.esquerda .textos{
+    height: 25px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 35px;
+    align-items: center;
+}
+.esquerda .textos a{
+    color: rgb(24, 11, 4);
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.textos a:hover{
+    letter-spacing: 4px;
+    text-decoration: underline;
+    color: rgb(10, 134, 66);
+    transition: all 0.3s;
+}
+.direita{
+
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.direita .textos{
+    height: 45px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.buttonenter{
+    display: flex;
+    height: 30px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid rgb(24, 11, 4);
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.buttonenter:hover{
+    border: 1px solid #0f4111;
+    color: #0f4111;
+    height: 29px;
+    width: 75px;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 1px 1px #adacac;
 }
 
-input[type="submit"]:hover,
-input[type="reset"]:hover {
-    background-color: #45a049;
+.buttonenter span{
+    font-weight: 600;
+}
+.buttonparticipe{
+        display: flex;
+        height: 30px;
+        width: 140px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        border: 1px solid rgb(24, 11, 4);
+        cursor: pointer;
+        transition: all 0.3s;
+}
+.buttonparticipe:hover{
+    border: 1px solid #0f4111;
+    color: #0f4111;
+    height: 29px;
+    width: 135px;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 1px 1px #adacac;
 }
 
-iframe {
-    width: 100%;
-    height: 100px;
-    border: none;
+.buttonparticipe span{
+    font-weight: 600;
 }
-
-.card {     
-    margin: 30 px ;  
-} 
-
-.card-img-top { 
-    height: 500px;  width: 330px; 
-
-   
-} 
-
-.nav-item { 
-  display: flex; 
-  justify-content: space-between;
-} 
 

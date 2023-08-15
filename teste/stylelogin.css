@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 100%;
+    max-width: 350px;
+}
+.single-input{
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+}
+.single-input .labels{
+    font-size: 16px;
+    position: absolute;
+    left: 25px;
+    bottom: 5px;
+    color: grey;
+    cursor: text;
+    transition: 0.3s ease-in-out;
+}
+.single-input .input{
+    width: 100%;
+    padding: 5px;
+    color: rgb(150, 150, 150);
+    border: 0;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0;
+    font-size: 16px;
+}
+.single-input .input:focus,
+.single-input .input:valid{
+    border-bottom: solid rgb(88, 194, 194);
+}
+.single-input .input:focus ~ label,
+.single-input .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 12px;
+}
+.single-input .input:focus ~ .logoemail img,
+.single-input .input:valid ~ img{
+    width: 17px;
+}
+.logoemail{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    color: grey;
+    cursor: text;
+    transition: 0.3s ease-in-out;
+}
+.logoemail img{
+    width: 20px;
+    transition: 0.3s ease-in-out;
+}
+.submit-button{
+    display: flex;
+    justify-content: center;
+}
+.entrar{
+    background-color: rgb(12, 221, 99);
+    color: white;
+    border: 0;
+    width: 150px;
+    height: 30px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.entrar:hover{
+    background-color: rgb(7, 131, 59);;
+}
