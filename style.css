@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #5a849f;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 45px;
+    background: #000000;
+    width: 500px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 16px;
+}
+section h2{
+    color: #f5f5f5;
+    font-size: 2.5rem;
+    margin: 2rem;
+}
+section form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+form label{
+    color: #f5f5f5;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+form input{
+    padding: 15px;
+    outline: none;
+    border: 0;
+    margin-bottom: 20px;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+form input:focus{
+    border-radius: 16px;
+}
+form textarea{
+    padding: 10px;
+    outline: none;
+    border: 0;
+    font-size: 15px;
+    margin-bottom: 30px;
+    transition: all 0.5s;
+}
+form textarea:focus{
+    border-radius: 16px;
+}
+form button{
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #f5f5f5;
+    color: #f5f5f5;
+    transition: all 1s;
+    margin-bottom: 20px;
+}
+form button:hover{
+    background: #f5f5f5;
+    color: #000000;
+    border-radius: 16px;
+}
+
+/*Página do Obrigado*/
+
+.main{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   min-height: 100vh;
+   background: #000000;
+   flex-direction: column;
+}
+.text{
+    font-size: 45px;
+    color: #f5f5f5;
+    margin-bottom: 30px;
+}
+.paragrafo{
+    color: #f5f5f5;
+    margin-bottom: 50px;
+}
+.btn{
+    padding: 15px 55px;
+    background: #f5f5f5;
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+.btn:hover{
+    border-radius: 16px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #5a849f;
+}
+
+/*Pagina de login*/
+
+.login{
+    background:#000000;
+    border-radius: 10px;
+    width: 400px;
+    padding: 40px;
+}
+.login h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+}
+.login .box-user{
+    position: relative;
+}
+.login .box-user input{
+    width: 100%;
+    padding: 10px 0;
+    outline: none;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+.login .box-user label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+.login .box-user input:focus~label,
+.login .box-user input:valid~label
+{
+    top: -20px;
+    left: 0;
+    color: #5a849f;;
+    font-size: 12px;
+}
+.forget{
+    font-size: 12px;
+    color: #5b6b8b;
+    float: right;
+}
+.btn{
+    position: relative;
+    display: inline-block;
+    padding: 12px 20px;
+    color: #5a849f;;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-top: 20px;
+    transition: .5s;
+    overflow: hidden;
+}
+.btn:hover{
+    background: #5a849f;
+    border-radius: 5px;
+    color: #172031;
+}
+.btn span{
+    position: absolute;
+    display: block;
+}
+.btn span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, transparent, #5a849f);
+    animation: btn1 1s linear infinite;
+}
+@keyframes btn1{
+    0%{
+        left: -100%;
+    }
+    50%,
+    100%{
+        left: 100%;
+    }
+}
+.btn span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #5a849f);
+    animation: btn2 1s linear infinite;
+    animation-delay: .20s;
+}
+@keyframes btn2{
+    0%{
+        top: -100%;
+    }
+    50%,
+    100%{
+        top: 100%;
+    }
+}
+.btn span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(270deg, transparent, #5a849f);
+    animation: btn3 1s linear infinite;
+    animation-delay: .45s;
+}
+@keyframes btn3{
+    0%{
+        right: -100%;
+    }
+    50%,
+    100%{
+        right: 100%;
+    }
+}
+.btn span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(26deg, transparent, #5a849f);
+    animation: btn4 1s linear infinite;
+    animation-delay: .70s;
+}
+@keyframes btn4{
+    0%{
+        bottom: -100%;
+    }
+    50%,
+    100%{
+        bottom: 100%;
+    }
+}
+@media (max-width: 405px){
+    .login{
+        width: 90%;
+    }
+}
